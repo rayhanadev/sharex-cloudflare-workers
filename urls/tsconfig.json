@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"target": "es2021",
+		"lib": ["es2021"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"baseUrl": ".",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"paths": {},
+		"types": [
+			"@cloudflare/workers-types",
+			"jest"
+		],
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
+}

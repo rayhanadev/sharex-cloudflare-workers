@@ -1,0 +1,28 @@
+run = "npm run replit-run-command"
+entrypoint = "index.ts"
+
+[languages.typescript]
+pattern = "**/{*.ts,*.js,*.tsx,*.jsx}"
+syntax = "typescript"
+
+	[languages.typescript.languageServer]
+	start = [ "typescript-language-server", "--stdio" ]
+
+[packager]
+language = "nodejs"
+
+	[packager.features]
+	enabledForHosting = false
+	packageSearch = true
+	guessImports = true
+
+[env]
+XDG_CONFIG_HOME = "/home/runner/.config"
+PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin"
+npm_config_prefix = "/home/runner/$REPL_SLUG/.config/npm/node_global"
+
+[nix]
+channel = "stable-22_11"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix", ".config"]

@@ -1,0 +1,11 @@
+name = "text"
+main = "src/index.ts"
+compatibility_date = "2023-01-21"
+
+[[r2_buckets]]
+binding = "TEXT_KV"
+bucket_name = "text-kv"
+preview_bucket_name = "text-kv-preview"
+
+workers_dev = true
+send_metrics = false

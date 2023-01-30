@@ -1,0 +1,36 @@
+name = "sharex"
+main = "src/index.ts"
+compatibility_date = "2023-01-21"
+
+[[r2_buckets]]
+binding = "URLS_KV"
+bucket_name = "urls-kv"
+preview_bucket_name = "urls-kv-preview"
+
+[[r2_buckets]]
+binding = "TEXT_KV"
+bucket_name = "text-kv"
+preview_bucket_name = "text-kv-preview"
+
+[[r2_buckets]]
+binding = "IMAGES_KV"
+bucket_name = "images-kv"
+preview_bucket_name = "images-kv-preview"
+
+[[r2_buckets]]
+binding = "FILES_KV"
+bucket_name = "files-kv"
+preview_bucket_name = "files-kv-preview"
+
+[[r2_buckets]]
+binding = "IMAGES_BUCKET"
+bucket_name = "images-bucket"
+preview_bucket_name = "images-bucket-preview"
+
+[[r2_buckets]]
+binding = "FILES_BUCKET"
+bucket_name = "files-bucket"
+preview_bucket_name = "files-bucket-preview"
+
+workers_dev = true
+send_metrics = false

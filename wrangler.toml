@@ -1,0 +1,4 @@
+name = "sharex-cloudflare-workers"
+compatibility_date = "2023-01-29"
+
+send_metrics = false

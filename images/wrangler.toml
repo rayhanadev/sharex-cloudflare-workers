@@ -1,0 +1,16 @@
+name = "images"
+main = "src/index.ts"
+compatibility_date = "2023-01-21"
+
+[[r2_buckets]]
+binding = "IMAGES_KV"
+bucket_name = "images-kv"
+preview_bucket_name = "images-kv-preview"
+
+[[r2_buckets]]
+binding = "IMAGES_BUCKET"
+bucket_name = "images-bucket"
+preview_bucket_name = "images-bucket-preview"
+
+workers_dev = true
+send_metrics = false

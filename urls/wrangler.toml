@@ -1,0 +1,11 @@
+name = "urls"
+main = "src/index.ts"
+compatibility_date = "2023-01-21"
+
+[[r2_buckets]]
+binding = "URLS_KV"
+bucket_name = "urls-kv"
+preview_bucket_name = "urls-kv-preview"
+
+workers_dev = true
+send_metrics = false

@@ -1,0 +1,16 @@
+name = "files"
+main = "src/index.ts"
+compatibility_date = "2023-01-21"
+
+[[r2_buckets]]
+binding = "FILES_KV"
+bucket_name = "files-kv"
+preview_bucket_name = "files-kv-preview"
+
+[[r2_buckets]]
+binding = "FILES_BUCKET"
+bucket_name = "files-bucket"
+preview_bucket_name = "files-bucket-preview"
+
+workers_dev = true
+send_metrics = false
